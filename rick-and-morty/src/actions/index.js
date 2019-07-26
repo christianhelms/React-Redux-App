@@ -12,6 +12,5 @@ export const fetchApiData = () => dispatch => {
     .then(res => {
       dispatch({ type: API_FETCH_SUCCESS, payload: res.data.results });
     })
-    .error(err => console.log(err));
-  dispatch({ type: API_FETCH_FAILURE });
+    .catch(err => console.log(err));
 };
