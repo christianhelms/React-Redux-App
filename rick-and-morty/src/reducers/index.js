@@ -1,7 +1,6 @@
 import {
   API_FETCH_START,
   API_FETCH_SUCCESS,
-  API_FETCH_FAILURE
 } from "../actions";
 
 const initialState = {

@@ -11,6 +11,7 @@ export const fetchApiData = () => dispatch => {
     .get("https://rickandmortyapi.com/api/character")
     .then(res => {
       dispatch({ type: API_FETCH_SUCCESS, payload: res.data.results });
+      console.log(res)
     })
     .catch(err => console.log(err));
 };
